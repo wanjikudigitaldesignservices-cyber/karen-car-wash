@@ -1,0 +1,71 @@
+/* KAREN CAR WASH — Midnight #0D1B2A | Electric Blue #1A8CFF | Gold #F5C842 */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--primary:#0D1B2A;--primary-light:#1a3050;--accent:#1A8CFF;--gold:#F5C842;--bg:#F5F7FA;--white:#fff;--text:#1a1a1a;--text-light:#6b7280;--shadow:0 4px 24px rgba(13,27,42,0.08);--shadow-lg:0 12px 48px rgba(13,27,42,0.14);--radius:12px;--transition:0.3s cubic-bezier(0.4,0,0.2,1)}
+html{scroll-behavior:smooth}body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Montserrat',sans-serif;font-weight:800}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}a{text-decoration:none;color:inherit;transition:var(--transition)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:8px;font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.95rem;border:2px solid transparent;cursor:pointer;transition:var(--transition);text-transform:uppercase;letter-spacing:0.05em}
+.btn-primary{background:var(--accent);color:var(--white);border-color:var(--accent)}.btn-primary:hover{background:#0070e0;transform:translateY(-2px);box-shadow:0 8px 24px rgba(26,140,255,0.3)}
+.btn-outline{background:transparent;color:var(--white);border-color:rgba(255,255,255,0.4)}.btn-outline:hover{border-color:var(--white);background:rgba(255,255,255,0.1)}
+.btn-small{padding:10px 24px;font-size:0.85rem;background:var(--primary);color:var(--white);border-color:var(--primary)}.btn-full{width:100%;justify-content:center}
+
+.navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:16px 0;transition:var(--transition)}.navbar.scrolled{background:rgba(13,27,42,0.97);backdrop-filter:blur(12px);padding:10px 0}
+.nav-container{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:'Montserrat',sans-serif;font-weight:900;font-size:1.3rem;color:var(--white);letter-spacing:0.06em}.nav-logo .accent{color:var(--accent)}
+.nav-links{display:flex;list-style:none;gap:4px}.nav-link{padding:8px 16px;color:rgba(255,255,255,0.8);font-size:0.9rem;font-weight:500;border-radius:6px}.nav-link:hover,.nav-link.active{color:var(--white);background:rgba(255,255,255,0.1)}
+.nav-cta{padding:10px 24px;background:var(--accent);color:var(--white);border-radius:8px;font-weight:700;font-size:0.9rem}
+.hamburger{display:none;background:none;border:none;cursor:pointer;padding:8px}.hamburger span{display:block;width:24px;height:2px;background:white;margin:5px 0;transition:var(--transition)}
+
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(135deg,#0D1B2A,#1a3050,#0a1420);padding:120px 24px 80px;position:relative}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 40%,rgba(26,140,255,0.12),transparent 60%)}
+.hero-content{position:relative;z-index:2;max-width:750px}
+.five-stars{margin-bottom:24px}.big-star{font-size:2.5rem;color:var(--gold);letter-spacing:8px}.rating-num{font-family:'Montserrat',sans-serif;font-weight:900;font-size:3rem;color:var(--gold);margin-left:16px}
+.hero h1{font-size:clamp(2.2rem,5vw,3.5rem);color:var(--white);margin-bottom:16px}.accent{color:var(--accent)}
+.hero-sub{font-size:1.1rem;color:rgba(255,255,255,0.7);margin-bottom:32px;max-width:550px;margin-left:auto;margin-right:auto}
+.hero-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+.hours-strip{background:var(--accent);padding:12px 0;color:var(--white);font-weight:600}.hours-flex{display:flex;gap:32px;justify-content:center;align-items:center;flex-wrap:wrap;font-size:0.95rem}
+.today-badge{background:rgba(0,0,0,0.2);padding:4px 16px;border-radius:50px}
+
+.section{padding:100px 0}.section-header{text-align:center;margin-bottom:50px}
+.tag{display:inline-block;padding:6px 18px;border-radius:50px;background:rgba(26,140,255,0.1);color:var(--accent);font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px}
+.section-header h2{font-size:clamp(1.8rem,4vw,2.8rem);color:var(--primary);margin-bottom:12px}
+.section-header.light h2{color:var(--white)}.section-header.light .tag{background:rgba(26,140,255,0.2)}
+
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.price-card{background:var(--white);padding:32px;border-radius:var(--radius);box-shadow:var(--shadow);text-align:center;border:2px solid transparent;transition:var(--transition)}
+.price-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}.price-card.featured{border-color:var(--accent);transform:scale(1.03)}
+.price-card h3{font-size:1.3rem;color:var(--primary);margin-bottom:8px}.price-card p{color:var(--text-light);margin-bottom:12px;font-size:0.95rem}
+.time{display:inline-block;padding:4px 12px;background:var(--bg);border-radius:50px;font-size:0.8rem;color:var(--text-light);margin-bottom:16px}
+
+.why-section{background:var(--primary);color:var(--white)}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.why-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius);padding:32px;text-align:center;transition:var(--transition)}
+.why-card:hover{background:rgba(255,255,255,0.1);transform:translateY(-4px)}.why-icon{font-size:2.5rem;display:block;margin-bottom:16px}
+.why-card h3{color:var(--accent);margin-bottom:8px;font-size:1.1rem}.why-card p{color:rgba(255,255,255,0.7);font-size:0.9rem}
+
+.booking-section{background:var(--bg)}.booking-wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:start}
+.booking-info h2{font-size:2rem;color:var(--primary);margin-bottom:12px}.booking-info p{color:var(--text-light);margin-bottom:24px}
+.booking-form{background:var(--white);padding:40px;border-radius:var(--radius);box-shadow:var(--shadow-lg)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}.form-group{margin-bottom:16px}
+.form-group label{display:block;margin-bottom:6px;font-size:0.9rem;font-weight:600;color:var(--primary)}
+.form-group input,.form-group select{width:100%;padding:12px 16px;border:1px solid rgba(0,0,0,0.12);border-radius:8px;font-family:'Inter',sans-serif;font-size:0.95rem;background:var(--bg)}
+.form-group input:focus,.form-group select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(26,140,255,0.1)}
+
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.review-card{background:var(--white);padding:32px;border-radius:var(--radius);box-shadow:var(--shadow);transition:var(--transition)}
+.review-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}.rs{color:var(--gold);margin-bottom:12px;font-size:1.1rem}
+.review-card p{color:var(--text-light);font-style:italic;margin-bottom:16px}.review-card strong{color:var(--accent)}
+
+.contact-section{background:var(--white)}.contact-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:40px}
+.cc{padding:20px;background:var(--bg);border-radius:8px;margin-bottom:12px;display:flex;align-items:center;gap:12px}
+.cc h4{font-size:1.3rem}.cc p{color:var(--text-light)}.cc a{color:var(--accent);font-weight:700}
+
+.footer{background:var(--primary);color:rgba(255,255,255,0.6);padding:24px 0;text-align:center;font-size:0.9rem}.footer a{color:var(--accent)}
+.whatsapp-float{position:fixed;bottom:24px;right:24px;z-index:999;width:60px;height:60px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.4);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 4px 20px rgba(37,211,102,0.4)}50%{box-shadow:0 4px 30px rgba(37,211,102,0.6),0 0 0 10px rgba(37,211,102,0.1)}}
+.toast{position:fixed;bottom:100px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--primary);color:var(--white);padding:16px 32px;border-radius:8px;font-weight:700;z-index:3000;opacity:0;transition:var(--transition);pointer-events:none}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.fade-in{opacity:0;transform:translateY(30px);transition:opacity 0.6s ease,transform 0.6s ease}.fade-in.visible{opacity:1;transform:translateY(0)}
+
+@media(max-width:1024px){.pricing-grid{grid-template-columns:1fr 1fr}.why-grid{grid-template-columns:1fr 1fr}.booking-wrap,.contact-grid{grid-template-columns:1fr}}
+@media(max-width:768px){.nav-links{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:rgba(13,27,42,0.98);padding:16px 24px}.nav-links.active{display:flex}.nav-cta{display:none}.hamburger{display:block}.pricing-grid,.reviews-grid{grid-template-columns:1fr}.why-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.booking-form{padding:24px}.hours-flex{flex-direction:column;gap:8px}}
